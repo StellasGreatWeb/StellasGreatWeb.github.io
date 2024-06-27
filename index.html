@@ -9,11 +9,18 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Stella&#39;s Adventure Story!.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Stella&#39;s Adventure Story!" startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="9B6E7622-9758-4AD3-87C7-3BF75E6F4D5F" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="625,250" size="100,100">test story
+<tw-storydata name="Stella&#39;s Adventure Story!" startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="9B6E7622-9758-4AD3-87C7-3BF75E6F4D5F" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="700,25" size="100,100">(set: $name to &#39;Kai&#39;)(set: $name to (prompt: &#39;What is your first name?&#39;,&#39;&#39;))
+
+$name go into walmart to do your usual shoping
+
+(set: $money to false)
+(set: $creditcard to false)
+(set: $trolly to false)
+
 
 [[go forward]]
 [[run away]]
-[[stay where you are]]</tw-passagedata><tw-passagedata pid="2" name="go forward" tags="" position="200,500" size="100,100">you bump into a wanted criminal and he get angry! what do you do? 😱
+[[stay where you are]]</tw-passagedata><tw-passagedata pid="2" name="go forward" tags="" position="200,500" size="100,100">$name just bumped into a wanted criminal and he get angry! what does $name do? 😱
 
 &lt;/style&gt;&lt;center&gt;
 &lt;img
@@ -23,7 +30,7 @@ src=&quot;criminal.jpg&quot;/&gt;
 [[run!]]
 [[try to keep the peace]]
 
-</tw-passagedata><tw-passagedata pid="3" name="run away" tags="" position="1000,200" size="100,100">There was a scary employee coming to get you!
+</tw-passagedata><tw-passagedata pid="3" name="run away" tags="" position="1000,325" size="100,100">There was a scary employee coming to get you!
 
 &lt;/style&gt;&lt;center&gt;
 &lt;img
@@ -35,12 +42,12 @@ src=&quot;angryemployee.jpg&quot;/&gt;
 
 &lt;audio
 src=&quot;crowd.mp3&quot; autoplay&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="stay where you are" tags="" position="1100,700" size="100,100"></tw-passagedata><tw-passagedata pid="5" name="fight" tags="" position="700,400" size="100,100"></tw-passagedata><tw-passagedata pid="6" name="get there manager" tags="" position="1275,400" size="100,100">good job! The manager fired the employee and said you can get a 100% discount! So you bought your stuff and you left the store, on your way home the angtry employee came up to you wanting to fight!
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="stay where you are" tags="" position="800,800" size="100,100"></tw-passagedata><tw-passagedata pid="5" name="fight" tags="" position="600,500" size="100,100"></tw-passagedata><tw-passagedata pid="6" name="get there manager" tags="" position="1275,400" size="100,100">good job! The manager fired the employee and said $name can get a 100% discount! So you bought your stuff and you left the store, on $name&#39;s way home the angry employee came up to you wanting to fight!
 
 What do you do?
 
 [[fight them!]]
-[[runnnnn!!!]]</tw-passagedata><tw-passagedata pid="7" name="runnnnn!!!" tags="" position="1200,600" size="100,100"></tw-passagedata><tw-passagedata pid="8" name="fight them!" tags="" position="900,500" size="100,100"></tw-passagedata><tw-passagedata pid="9" name="run!" tags="" position="300,700" size="100,100">You run, run, run, run and run all the way outside and you come across a abandoned car! 🚗
+[[runnnnn!!!]]</tw-passagedata><tw-passagedata pid="7" name="runnnnn!!!" tags="" position="1200,600" size="100,100"></tw-passagedata><tw-passagedata pid="8" name="fight them!" tags="" position="900,500" size="100,100">$name starts fight the employee bashing them to the ground, then $name [[runs away]] so they dont get caught.</tw-passagedata><tw-passagedata pid="9" name="run!" tags="" position="300,700" size="100,100">You run, run, run, run and run all the way outside and you come across a abandoned car! 🚗
 What do you do?
 
 &lt;/style&gt;&lt;center&gt;
@@ -51,7 +58,28 @@ src=&quot;abonedonedcar.jpg&quot;/&gt;
 [[Get inside it and try to get it started]]
 [[just leave it]]
 
-</tw-passagedata><tw-passagedata pid="10" name="try to keep the peace" tags="" position="775,650" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="Get inside it and try to get it started" tags="" position="500,700" size="100,100"></tw-passagedata><tw-passagedata pid="12" name="just leave it" tags="" position="500,525" size="100,100"></tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="10" name="try to keep the peace" tags="" position="100,800" size="100,100">To keep the peace you need money do you have any money check your [[pockets]]
+
+you look in your [[pockets]]
+
+what do you find?
+
+If you already have money [[bribe]] the criminal
+</tw-passagedata><tw-passagedata pid="11" name="Get inside it and try to get it started" tags="" position="300,900" size="100,100"></tw-passagedata><tw-passagedata pid="12" name="just leave it" tags="" position="400,500" size="100,100"></tw-passagedata><tw-passagedata pid="13" name="runs away" tags="" position="1000,700" size="100,100"></tw-passagedata><tw-passagedata pid="14" name="pockets" tags="" position="100,925" size="100,100">Choose the money
+
+&lt;/style&gt;&lt;center&gt;
+[[&lt;img src=&#39;bottlecapss.jpg&#39;&gt;-&gt;bottlecaps]]
+&lt;/style&gt;&lt;left&gt;
+[[&lt;img src=&#39;coins.jpg&#39;&gt;-&gt;coins]]
+&lt;/style&gt;&lt;right&gt;
+[[&lt;img src=&#39;money.jpg&#39;&gt;-&gt;money]]
+
+</tw-passagedata><tw-passagedata pid="15" name="bottlecaps" tags="" position="100,1050" size="100,100">These are bottlecaps not money you cannot [[bribe]] the criminal. Check your [[pockets]]</tw-passagedata><tw-passagedata pid="16" name="coins" tags="" position="225,1050" size="100,100">these are fake coins not money you cannot [[bribe]] the criminal. Check your [[pockets]]
+</tw-passagedata><tw-passagedata pid="17" name="money" tags="" position="-25,1050" size="100,100">(set: $money to true)
+Congratulations you have money, now you can [[bribe]] the criminal</tw-passagedata><tw-passagedata pid="18" name="bribe" tags="" position="-25,925" size="100,100">{
+(if: ($money is true)) [congratulations $name you can bribe the criminal and escape safely]
+(else:) [$name you dont have any money go back and check your [[pockets]]]
+}</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
