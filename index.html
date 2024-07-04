@@ -42,12 +42,16 @@ src=&quot;angryemployee.jpg&quot;/&gt;
 
 &lt;audio
 src=&quot;crowd.mp3&quot; autoplay&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="stay where you are" tags="" position="800,800" size="100,100"></tw-passagedata><tw-passagedata pid="5" name="fight" tags="" position="600,500" size="100,100"></tw-passagedata><tw-passagedata pid="6" name="get there manager" tags="" position="1275,400" size="100,100">good job! The manager fired the employee and said $name can get a 100% discount! So you bought your stuff and you left the store, on $name&#39;s way home the angry employee came up to you wanting to fight!
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="stay where you are" tags="" position="800,800" size="100,100">You arrive at walmart and realise you need a trolly, so you go to the [[trolly park]].
+ 
+ What do you find?
+ 
+ If you already have trolly, [[start]] your shopping trip. </tw-passagedata><tw-passagedata pid="5" name="fight" tags="" position="600,500" size="100,100"></tw-passagedata><tw-passagedata pid="6" name="get there manager" tags="" position="1200,400" size="100,100">good job! The manager fired the employee and said $name can get a 100% discount! So you bought your stuff and you left the store, on $name&#39;s way home the angry employee came up to you wanting to fight!
 
 What do you do?
 
 [[fight them!]]
-[[runnnnn!!!]]</tw-passagedata><tw-passagedata pid="7" name="runnnnn!!!" tags="" position="1200,600" size="100,100"></tw-passagedata><tw-passagedata pid="8" name="fight them!" tags="" position="900,500" size="100,100">$name starts fight the employee bashing them to the ground, then $name [[runs away]] so they dont get caught.</tw-passagedata><tw-passagedata pid="9" name="run!" tags="" position="300,700" size="100,100">You run, run, run, run and run all the way outside and you come across a abandoned car! 🚗
+[[runnnnn!!!]]</tw-passagedata><tw-passagedata pid="7" name="runnnnn!!!" tags="" position="1200,575" size="100,100"></tw-passagedata><tw-passagedata pid="8" name="fight them!" tags="" position="900,500" size="100,100">$name starts fight the employee bashing them to the ground, then $name [[runs away]] so they dont get caught.</tw-passagedata><tw-passagedata pid="9" name="run!" tags="" position="300,700" size="100,100">You run, run, run, run and run all the way outside and you come across a abandoned car! 🚗
 What do you do?
 
 &lt;/style&gt;&lt;center&gt;
@@ -75,11 +79,26 @@ If you already have money [[bribe]] the criminal
 [[&lt;img src=&#39;money.jpg&#39;&gt;-&gt;money]]
 
 </tw-passagedata><tw-passagedata pid="15" name="bottlecaps" tags="" position="100,1050" size="100,100">These are bottlecaps not money you cannot [[bribe]] the criminal. Check your [[pockets]]</tw-passagedata><tw-passagedata pid="16" name="coins" tags="" position="225,1050" size="100,100">these are fake coins not money you cannot [[bribe]] the criminal. Check your [[pockets]]
-</tw-passagedata><tw-passagedata pid="17" name="money" tags="" position="-25,1050" size="100,100">(set: $money to true)
-Congratulations you have money, now you can [[bribe]] the criminal</tw-passagedata><tw-passagedata pid="18" name="bribe" tags="" position="-25,925" size="100,100">{
+</tw-passagedata><tw-passagedata pid="17" name="money" tags="" position="0,1050" size="100,100">(set: $money to true)
+Congratulations you have money, now you can [[bribe]] the criminal</tw-passagedata><tw-passagedata pid="18" name="bribe" tags="" position="0,925" size="100,100">{
 (if: ($money is true)) [congratulations $name you can bribe the criminal and escape safely]
 (else:) [$name you dont have any money go back and check your [[pockets]]]
-}</tw-passagedata></tw-storydata>
+}</tw-passagedata><tw-passagedata pid="19" name="trolly park" tags="" position="800,925" size="100,100">You get to the trolly park, and see there is none there. so you go [[search]].</tw-passagedata><tw-passagedata pid="20" name="start" tags="" position="925,925" size="100,100">{
+(if: ($trolly is true)) [congratulations $name you can start your [[shopping trip.]]]
+(else:) [$name you dont have any money go back and keep [[search]]ing]
+}</tw-passagedata><tw-passagedata pid="21" name="search" tags="" position="800,1050" size="100,100">You search the carpark and find a few things!
+
+Choose the trolly. 
+
+&lt;/style&gt;&lt;center&gt;
+[[&lt;img src=&#39;wrongtrolly.jpg&#39;&gt;-&gt;wrong trolly]]
+&lt;/style&gt;&lt;left&gt;
+[[&lt;img src=&#39;faketrolly.jpg&#39;&gt;-&gt;fake trolly]]
+&lt;/style&gt;&lt;right&gt;
+[[&lt;img src=&#39;trolly.jpg&#39;&gt;-&gt;trolly]]
+
+</tw-passagedata><tw-passagedata pid="22" name="wrong trolly" tags="" position="800,1175" size="100,100">Wrong trolly, [[search]] to find the right one!</tw-passagedata><tw-passagedata pid="23" name="fake trolly" tags="" position="925,1175" size="100,100">You chose the trollly and when you put your stuff on it, its snapped right in half. [[search]] to find the right one.</tw-passagedata><tw-passagedata pid="24" name="trolly" tags="" position="675,1175" size="100,100">(set: $trolly to true)
+Congratulations you have the trolly, now you can [[start]] the shopping trip</tw-passagedata><tw-passagedata pid="25" name="shopping trip." tags="" position="925,1050" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
